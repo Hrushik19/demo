@@ -10,7 +10,7 @@ app.listen(2000,()=>{
     console.log('serveris running on port 2000')
 })
 
-app.get("/students",(req,res)=>{
+appget("/students",(req,res)=>{
     if(students){
         res.status(200).json({
             "message":"students found",
@@ -56,5 +56,4 @@ app.put("/updatestudent/:id",(req,res)=>{
 
         })
     }
-   
 })
